@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=  "ShopNow.css">
+    <link rel="stylesheet" href="Shopnow.js">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">Shop now</a>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+    <div class="container">
+        
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+                <button id="buyNowBtn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-shop" id="shop">
+        <div class="shop-links">
+            <div>
+                <h2>products</h2>
+            </div>
+            <div class="links">
+                <li data-filter="all">all</li>
+                <li data-filter=".coffee">coffee</li>
+                <li data-filter=".machines">machines</li>
+                <li data-filter=".sweets">sweets</li>
+            </div>
+        </div>
+        <div class="shop-flex consts">
+            <div class="shop1 mix coffee">
+                <div class="shop-image" id="0">
+                    <img src="pic/picture-1.png" alt="">
+                    <div class="price">
+                        -7%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee 1</h2>
+                <div class="stars" id="1">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $32.00
+                </article>
+                <span>
+                    $45.00
+                </span>
+            </div>
+
+            <div class="shop1 mix coffee">
+                <div class="shop-image">
+                    <img src="pic/picture-2.png" alt="">
+                    <div class="price">
+                        -12%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee 2</h2>
+                <div class="stars" id="2">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $82.00
+                </article>
+                <span>
+                    $95.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix coffee">
+                <div class="shop-image">
+                    <img src="pic/picture-3.png" alt="">
+                    <div class="price">
+                        -13%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee 3</h2>
+                <div class="stars" id="3">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $84.00
+                </article>
+                <span>
+                    $102.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix coffee">
+                <div class="shop-image">
+                    <img src="pic/picture-4.png" alt="">
+                    <div class="price">
+                        -6%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee 4</h2>
+                <div class="stars" id="4">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $66.00
+                </article>
+                <span>
+                    $85.00
+                </span>
+            </div>
+
+
+            <div class="shop1 mix machines">
+                <div class="shop-image">
+                    <img src="pic/m1.png" alt="">
+                    <div class="price">
+                        -20%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>coffee machines 1</h2>
+                <div class="stars" id="5">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $203.00
+                </article>
+                <span>
+                    $250.00
+                </span>
+            </div>
+
+            <div class="shop1 mix machines">
+                <div class="shop-image">
+                    <img src="pic/m2.png" alt="">
+                    <div class="price">
+                        -5%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>coffee machines 2</h2>
+                <div class="stars" id="6">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                </div>
+                <article>
+                    $265.00
+                </article>
+                <span>
+                    $293.00
+                </span>
+            </div>
+
+            <div class="shop1 mix machines">
+                <div class="shop-image">
+                    <img src="pic/m3.png" alt="">
+                    <div class="price">
+                        -7%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>coffee machines 3</h2>
+                <div class="stars" id="7">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $160.00
+                </article>
+                <span>
+                    $192.00
+                </span>
+            </div>
+
+            <div class="shop1 mix sweets">
+                <div class="shop-image">
+                    <img src="pic/m4.png" alt="">
+                    <div class="price">
+                        -15%
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="" id="addToCartBtn" link="foot"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <h2>hot coffee 5</h2>
+                <div class="stars" id="8">
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="fas fa-star gold"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <article>
+                    $28.00
+                </article>
+                <span>
+                    $66.00
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Add this script at the end of your HTML file -->
+<script>
+    // Initialize cart items from local storage or an empty array
+    var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Add click event listener to all "Add to Cart" buttons
+    var addToCartButtons = document.querySelectorAll('.shop1 .social #addToCartBtn');
+    addToCartButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            // Get the parent shop item
+            var shopItem = this.closest('.shop1');
+
+            // Get item details
+            var itemName = shopItem.querySelector('h2').textContent;
+            var itemPrice = parseFloat(shopItem.querySelector('article').textContent.replace('$', ''));
+
+            // Check if the item is already in the cart
+            var existingItem = cartItems.find(function (item) {
+                return item.name === itemName;
+            });
+
+            // If the item is already in the cart, increase its quantity; otherwise, add it to the cart
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cartItems.push({
+                    name: itemName,
+                    price: itemPrice,
+                    quantity: 1
+                });
+            }
+
+            // Update local storage and UI
+            updateCart();
+            alert('Item added to cart!');
+        });
+    });
+
+    // Update the cart UI and total
+    function updateCart() {
+        // Update local storage
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+
+        // Update cart count in the header
+        var cartCount = document.getElementById('count');
+        cartCount.textContent = cartItems.reduce(function (total, item) {
+            return total + item.quantity;
+        }, 0);
+
+        // Update cart items in the sidebar
+        var cartItemContainer = document.getElementById('cartItem');
+        if (cartItems.length === 0) {
+            cartItemContainer.textContent = 'Your cart is empty';
+        } else {
+            cartItemContainer.innerHTML = '';
+            cartItems.forEach(function (item) {
+                var cartItemElement = document.createElement('div');
+                cartItemElement.textContent = item.name + ' x' + item.quantity;
+                cartItemContainer.appendChild(cartItemElement);
+            });
+        }
+
+        // Update total in the sidebar
+        var totalElement = document.getElementById('total');
+        var totalAmount = cartItems.reduce(function (total, item) {
+            return total + item.price * item.quantity;
+        }, 0);
+        totalElement.textContent = '$ ' + totalAmount.toFixed(2);
+    }
+
+    // Initial update of the cart
+    updateCart();
+</script>
+
+<script>
+    // Initialize cart items from local storage or an empty array
+    var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Update the cart UI and total
+    function updateCart() {
+        // Update local storage
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+
+        // Update cart count in the header
+        var cartCount = document.getElementById('count');
+        cartCount.textContent = cartItems.reduce(function (total, item) {
+            return total + item.quantity;
+        }, 0);
+
+        // Update cart items in the sidebar
+        var cartItemContainer = document.getElementById('cartItem');
+        if (cartItems.length === 0) {
+            cartItemContainer.textContent = 'Your cart is empty';
+        } else {
+            cartItemContainer.innerHTML = '';
+            cartItems.forEach(function (item, index) {
+                var cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+
+                var quantityInput = document.createElement('input');
+                quantityInput.type = 'number';
+                quantityInput.value = item.quantity;
+                quantityInput.min = 1;
+                quantityInput.max = 10;
+                quantityInput.addEventListener('change', function () {
+                    // Update the quantity when changed
+                    item.quantity = parseInt(quantityInput.value, 10);
+                    updateCart();
+                });
+
+                var removeButton = document.createElement('button');
+                removeButton.textContent = 'x';
+                removeButton.addEventListener('click', function () {
+                    // Remove the item from the cart
+                    cartItems.splice(index, 1);
+                    updateCart();
+                });
+
+                cartItemElement.textContent = item.name + ' - $' + item.price.toFixed(2) + ' x ';
+                cartItemElement.appendChild(quantityInput);
+                cartItemElement.appendChild(removeButton);
+
+                cartItemContainer.appendChild(cartItemElement);
+            });
+        }
+
+        // Update total in the sidebar
+        var totalElement = document.getElementById('total');
+        var totalAmount = cartItems.reduce(function (total, item) {
+            return total + item.price * item.quantity;
+        }, 0);
+        totalElement.textContent = '$ ' + totalAmount.toFixed(2);
+    }
+
+    // Initial update of the cart
+    updateCart();
+</script>
+
+<!-- Add this script at the end of your HTML file -->
+<script>
+    function buyNow() {
+        // Get the total amount from the #total element
+        var totalAmount = parseFloat(document.getElementById('total').textContent.replace('$', ''));
+
+        if (totalAmount > 0) {
+            // Perform the logic to handle the purchase
+            alert('Redirecting to checkout page. Thank you for shopping!');
+            // You can implement your actual redirection logic here
+        } else {
+            alert('Your cart is empty. Add items before proceeding to checkout.');
+        }
+    }
+</script>
+
+</body>
+</html>
